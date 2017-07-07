@@ -16,12 +16,12 @@ Fae CMS (Docs): https://www.faecms.com/documentation/
 3. In your terminal using either nano, vi, or vim edit `Gemfile`. 
 4. Add `gem 'fae-rails'` anywhere in the document (I like to add it at the top of the doc)
 5. Run Bundle install _This is required, I've done it in advance so as not to take 30 minutes installing stuff_
-6. Run `rails g fae:install`
-7. Next run `rake db:create` and `rake db:migrate fae:seed_db`. These two commands need to be run individually. The first will create the database, the second will create the tables & put the entries that Fae needs into it. 
+6. Run `rake db:create`, `rails g fae:install`, and `rake db:migrate` 
 
 ### Pushing to heroku:
 If you've ever pushed to heroku it's the exact same process but you do not need a procfile! For those who are unfamiliar please check: https://devcenter.heroku.com/articles/getting-started-with-rails5 and: https://www.faecms.com/documentation/installation-index#heroku for more information.
 Key things to note:
+* You MUST run the above steps otherwise it will give you a build error!
 * Heroku will only allow Postgres as the database (hence why we specified Postgresql in step 2).
 * In order to push up to heroku you must have run the above commands & bundle has to install sucessfully. (if you get an error about a MagickWand it's a version mismatch, follow the first answer here: https://stackoverflow.com/questions/39494672/rmagick-installation-cant-find-magickwand-h) 
 * Once the app is on heroku run: 
