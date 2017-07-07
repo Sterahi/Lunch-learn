@@ -3,8 +3,11 @@
 ## Links:
 
 Rails install: https://gorails.com/setup/osx/10.12-sierra
+
 Fae CMS: https://github.com/wearefine/fae
+
 Heroku Documentation: https://devcenter.heroku.com/articles/getting-started-with-rails5
+
 Fae CMS (Docs): https://www.faecms.com/documentation/
 
 ### Base configuration
