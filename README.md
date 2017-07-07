@@ -39,8 +39,9 @@ A 1-1 Rails to Node:
 `rails s` = `npm start`
 
 General rails commands:
-`rails g controller [name]`/`rails generate controller [name]`: similar to `yo kraken:controller [name]`. Generates a new controller with `[name]`. Similarly controller can be replaced with model, or view. This will also generate a migration for you to use for database storage.
-`rake`: automates tasks for you
-`rake db:create`: Creates the databases that have been created.
-`rake db:migrate`: runs all migrations that have been created (from `rails g`).
-`rails g fae:install`: installs the Fae Gem and all the things it requires.
+* `rails g controller [name]`/`rails generate controller [name]`: similar to `yo kraken:controller [name]`. Generates a new controller with `[name]`. Similarly controller can be replaced with model, or view. This will also generate a migration for you to use for database storage.
+* `rake`: automates tasks for you
+* `rake db:create`: Creates the databases that have been created.
+* `rake db:migrate`: runs all migrations that have been created (from `rails g`).
+* `rails g fae:install`: installs the Fae Gem and all the things it requires.
+* `rake assets:precompile`: precompiles the assets so they can be served faster
